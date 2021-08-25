@@ -14,3 +14,56 @@ body {
   font-family: "Lato", sans-serif;
   background-color: #f6f6f6;
 }
+
+ul {
+  list-style-type: none;
+}
+
+/* ================== Header ================== */
+
+.header {
+  background-color: #ede9fe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0 2.5em 0;
+}
+
+.header h1 {
+  text-transform: capitalize;
+}
+
+#search {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  width: 20rem;
+  margin: 1.5em 0 2em 0;
+}
+
+#search:focus {
+  border: 2px solid #6d28d9;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.filter-box a {
+  text-decoration: none;
+  color: #6d28d9;
+  border: 1px solid #6d28d9;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.filter-box a:hover {
+  background-color: #6d28d9;
+  color: #ede9fe;
+}
