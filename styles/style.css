@@ -56,6 +56,7 @@ ul {
 
 .filter-box a {
   text-decoration: none;
+  text-transform: capitalize;
   color: #6d28d9;
   border: 1px solid #6d28d9;
   padding: 5px 10px;
@@ -66,4 +67,148 @@ ul {
 .filter-box a:hover {
   background-color: #6d28d9;
   color: #ede9fe;
+}
+
+/* ================== Products ================== */
+
+.products {
+  padding: 4rem 0;
+}
+
+.products-content {
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+}
+
+.product {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  height: 310px;
+  position: relative;
+}
+
+.product a {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+}
+
+/*  Resize Images ====================================== */
+
+.product:nth-child(2) a {
+  width: 290px;
+}
+
+.product:nth-child(3) a {
+  width: 230px;
+  height: 270px;
+}
+
+.product:nth-child(4) a {
+  width: 310px;
+}
+
+.product:nth-child(5) a {
+  width: 230px;
+}
+
+.product:nth-child(6) a {
+  width: 340px;
+  height: 220px;
+  margin-top: 20px;
+}
+
+.product:nth-child(8) a {
+  width: 290px;
+  height: 290px;
+}
+
+.product:nth-child(9) a {
+  width: 230px;
+}
+
+.product:nth-child(11) a {
+  width: 220px;
+}
+
+.product:nth-child(12) a {
+  width: 350px;
+}
+
+.product:nth-child(14) a {
+  width: 260px;
+}
+
+/*  Resize Images ====================================== */
+
+.product a img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(216, 216, 216);
+  background: #ede9fe;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.product-title {
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.product-price {
+  color: #6d28d9;
+  font-weight: bold;
+}
+
+/* ================== Responsive ================== */
+
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 30px;
+  }
+
+  #search {
+    width: 17rem;
+  }
+
+  .header {
+    padding-bottom: 1.5em;
+  }
+
+  .filter-box {
+    width: 85% !important;
+    flex-wrap: wrap;
+  }
+
+  .filter-box a {
+    display: inline-block;
+    margin: 0 0.8em 1.2em 0.8em;
+  }
+
+  .product {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter-box {
+    width: 70%;
+    flex-wrap: wrap;
+  }
 }
